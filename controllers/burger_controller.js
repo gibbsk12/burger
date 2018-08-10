@@ -1,7 +1,7 @@
 var orm = require("../config/orm");
 
 module.exports = function(app) {
-    app.get("/api/burgers", function(req, res) {
+    app.get(["/api/burgers", '/'], function(req, res) {
       orm.selectAll(function(results) {
           var burgers = {eaten: [], uneaten: []}
         for (i =0; i< results.length; i++){
