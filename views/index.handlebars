@@ -1,5 +1,6 @@
 <div class="row mb-5">
-    <div class="col-6">
+    <div class="col-6 text-center">
+        <h5> Burgers to Eat</h5>
         <ul class="list-group ml-5" id="notEaten">
             {{#each burgers.uneaten}}
             <li class="list-group-item d-flex justify-content-between align-items-center" id="{{routeName}}">
@@ -9,7 +10,8 @@
             {{/each}}
         </ul>
     </div>
-    <div class="col-6">
+    <div class="col-6 text-center">
+        <h5>Burgers Already Devoured!</h5>
         <ul class="list-group mr-5" id="eaten">
             {{#each burgers.eaten}}
             <li class="list-group-item d-flex justify-content-between align-items-center" id="{{routeName}}">
